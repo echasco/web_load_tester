@@ -118,8 +118,8 @@ Cuando se usa `-file`, se genera un reporte adicional con:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/web-load-tester.git
-cd web-load-tester
+git clone https://github.com/echasco/web_load_tester.git
+cd web_load_tester
 ```
 
 ### 2. Instalar dependencias
@@ -135,7 +135,7 @@ pip install aiohttp rich
 ### ▶ Probar una sola URL
 
 ```bash
-python web-load-tester.py -url https://dominio.cl -c 200 -d 30 --csv --html
+python web_load_tester.py -url https://dominio.cl -c 200 -d 30 --csv --html
 ```
 
 ### ▶ Probar múltiples URLs desde un archivo
@@ -151,7 +151,7 @@ https://otro.cl/servicio/test
 Ejecutar:
 
 ```bash
-python web-load-tester.py -file urls.txt -c 100 -d 60 --csv --html
+python web_load_tester.py -file urls.txt -c 100 -d 60 --csv --html
 ```
 
 Esto generará:
@@ -162,19 +162,19 @@ Esto generará:
 ### ▶ Enviar máximo 5000 requests
 
 ```bash
-python web-load-tester.py -url https://api.cl -n 5000
+python web_load_tester.py -url https://api.cl -n 5000
 ```
 
 ### ▶ Controlar requests por segundo
 
 ```bash
-python web-load-tester.py -url https://api.cl -r 50
+python web_load_tester.py -url https://api.cl -r 50
 ```
 
 ### ▶ Enviar POST con payload y headers
 
 ```bash
-python web-load-tester.py -url https://api.cl --method POST --payload data.json --headers headers.json
+python web_load_tester.py -url https://api.cl --method POST --payload data.json --headers headers.json
 ```
 
 ---
@@ -200,9 +200,9 @@ summary_2026_10_20_15_35_43.html
 ## 🧱 Estructura del Proyecto
 
 ```text
-web-load-tester/
+web_load_tester/
 │
-├── web-load-tester.py        # Script principal
+├── web_load_tester.py        # Script principal
 ├── urls.txt                  # Archivo de ejemplo
 ├── README.md                 # Documentación del proyecto
 │
